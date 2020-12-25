@@ -1,5 +1,6 @@
 "use strict";
 
+
 /* global vars */
 global.$ = {
     gulp        :require('gulp'),                                                                                           // gulp
