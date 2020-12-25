@@ -1,11 +1,11 @@
-# WorkPack2020
+#WorkPack2020
 Work envoriment for Frontend develop + Modx Revo (CMF) in one pack :) 
 
-## Needed
+##Needed
     — server
     — node js
     — npm
-## Using
+##Using
     — use npm install
     — check settings gulpfile.js
     — Front:
