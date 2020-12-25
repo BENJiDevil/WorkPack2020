@@ -1,21 +1,5 @@
 "use strict";
 
-/*
-    for use this pack:
-    — check settings gulpfile.js
-    — front:
-        - check css settings _settings.sass
-        - check css libs _plugins.sass
-        - check js libs _common.js
-    — ModX:
-        - check settings in config.php (src/modx/updsite)
-        - modx_install (create main files)
-        - unzip modx archive
-        - cd to setup folder and use php index.php --installmode=new
-        - cd to updsite folder and use index.php
-        - use modx_build to work with tpls
- */
-
 /* global vars */
 global.$ = {
     gulp        :require('gulp'),                                                                                           // gulp
