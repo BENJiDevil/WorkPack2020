@@ -1,0 +1,79 @@
+.d-none
+  display: none !important
+.lazyloaded[data-bgset]
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+i[class^="icon-sprite"]
+  display: inline-block
+form
+  .input-group
+    width: 100%
+    &.inline-group
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: wrap
+      width: auto
+      flex-basis: auto
+      max-width: 100%
+      .inline-group__item
+        flex-grow: 1
+        &.clear
+          flex-grow: inherit
+    &.file-group
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: flex-start
+      flex-wrap: nowrap
+      width: auto
+      flex-basis: auto
+      max-width: 100%
+      cursor: pointer
+      border: 1px solid #aaa
+      border-radius: 5px
+      padding: 5px 15px
+      svg
+        display: inline-block
+        height: 40px
+        fill: $accent_color
+    & > select.form-styler
+      display: none
+    & > input[type="file"]
+      display: none
+  label[for]
+    display: block
+    width: 100%
+    cursor: default
+  label[class="form-styler"]
+    display: inline-flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+    flex-wrap: nowrap
+    width: auto
+    flex-basis: auto
+    position: relative
+    & > input
+      display: none
+  input:not([type="file"]),
+  textarea
+    border: 1px solid $input-border-color
+    border-radius: $input-border-radius
+    padding: $input-padding
+    width: 100%
+    max-width: 100%
+    @include input-placeholder
+      opacity: 1
+      transition: opacity 0.3s ease
+      color: $input-placeholder
+  input:focus,
+  textarea:focus
+    @include input-placeholder
+      opacity: 0
+      transition: opacity 0.3s ease
+  button[class]
+    width: 100%
+    display: block

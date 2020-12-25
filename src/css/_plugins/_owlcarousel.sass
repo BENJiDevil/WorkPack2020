@@ -1,0 +1,56 @@
+@import "../../libs/owl.carousel/src/scss/owl.carousel.scss"               // owl carousel
+
+$dotsize: 20px
+$dotradius: 50%
+$dotcolor: #aaa
+$dotcolor_active: red
+$arrow_color: red
+
+.owl-nav
+  position: absolute
+  top: 50%
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: space-between
+  flex-wrap: nowrap
+  width: 100%
+  flex-basis: 100%
+  max-width: 100%
+  height: 1px
+  button
+    outline: none
+    width: 40px
+    height: 40px
+    svg
+      fill: $arrow_color
+      display: block
+      width: auto
+      max-width: 100%
+    &.owl-next
+      svg
+        transform: scale(-1,1)
+.owl-dots
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+  flex-wrap: nowrap
+  width: 100%
+  flex-basis: 100%
+  max-width: 100%
+  .owl-dot
+    margin: 0 5px
+    outline: none
+    width: auto
+    span
+      display: inline-block
+      border-radius: $dotradius
+      width: $dotsize
+      height: $dotsize
+      background-color: $dotcolor
+      transition: background-color .5s
+    &.active
+      span
+        background-color: $dotcolor_active
+
